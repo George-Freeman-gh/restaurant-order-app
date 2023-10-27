@@ -148,9 +148,12 @@ document.addEventListener('click', (e) => {
 
         orderContainer.innerHTML = `
         <div class="order-complete-container">
-            <h2>Thanks, ${name}! Your order is on its way!</h2>
+            <h2 id="order-complete-text"></h2>
         </div>
         `
+    
+
+        document.getElementById("order-complete-text").textContent = `Thanks, ${name}! Your order is on its way!`
 
         OrderArray = []
 
